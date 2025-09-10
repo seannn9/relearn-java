@@ -5,8 +5,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        String[] programs = {"FizzBuzz", "Basic Calculator", "Currency Converter"};
-        System.out.println("What program would you like to start?");
+        String[] programs = {"FizzBuzz", "Basic Calculator", "Currency Converter", "Multiplication Table"};
+        System.out.println("\nWhat program would you like to start?");
         for (int i = 1; i <= programs.length; i++) {
             System.out.println(i + ": " + programs[i-1]);
         }
@@ -25,6 +25,9 @@ public class Main {
                     break;
                 case "Currency Converter":
                     CurrencyConverter.run(scanner);
+                    break;
+                case "Multiplication Table":
+                    MultiplicationTable.run(scanner);
                     break;
                 default:
                     System.out.println("No program selected");
